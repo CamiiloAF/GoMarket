@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +13,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.android.go_market.Injection;
+import com.example.android.go_market.features.auth.login.ui.LoginActivity;
 import com.example.android.go_market.features.auth.login.ui.ViewModelFactory;
 import com.example.android.go_market.features.detail_shop.domain.entities.ShopModel;
 import com.example.android.go_market.features.detail_shop.ui.DetailShopActivity;
@@ -56,6 +58,14 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
             startActivity(intent);
         });
 
+        ImageButton mImageButtonExit = findViewById(R.id.imageButtonExit);
+        mImageButtonExit.setOnClickListener(v -> {
+            Intent intent = new Intent(this, LoginActivity.class);
+            startActivity(intent);
+
+            finish();
+        });
+
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
 
@@ -83,22 +93,6 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
             }
         }
     }
-
-    //    override fun onRequestPermissionsResult(requestCode: Int,permissions: Array<out String>,grantResults: IntArray)
-//    {
-//        when (requestCode) {
-//        MY_PERMISSION_REQUEST_CODE ->
-//        {
-//            if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED)
-//            {
-//                buildLocationRequest()
-//                buildLocationCallback()
-//                if (location_switch.isChecked)
-//                    displayLocation()
-//            }
-//        }
-//    }
-//    }
 
     @Override
     protected void onStart() {

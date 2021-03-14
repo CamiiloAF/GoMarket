@@ -12,6 +12,15 @@
         android:layout_height="match_parent"
         tools:context="com.example.android.go_market.features.home.ui.HomeActivity" />
 
+    <ImageButton
+        android:id="@+id/imageButtonExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="16dp"
+        android:backgroundTint="@android:color/transparent"
+        android:src="@drawable/ic_baseline_exit_to_app_24" />
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/FABSearch"
         android:layout_width="wrap_content"

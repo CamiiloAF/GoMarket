@@ -71,6 +71,8 @@ public class DetailShopActivity extends AppCompatActivity {
                                 setTextIntoEditTexts();
                                 if (shopId != -1 && !mViewModel.isMyShop(mShopModel.getUserName()))
                                     setViewReadOnly();
+                                else
+                                    mButtonDeleteShop.setVisibility(View.VISIBLE);
                             },
                             throwable -> Log.e("TAG", "Unable to register username", throwable)));
         }

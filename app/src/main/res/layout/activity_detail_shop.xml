@@ -81,7 +81,8 @@
             style="@style/deleteButton"
             android:layout_gravity="center"
             android:layout_marginTop="16dp"
-            android:text="@string/store_save_button" />
+            android:text="@string/store_delete_button"
+            android:visibility="gone" />
 
     </LinearLayout>
 </ScrollView>
