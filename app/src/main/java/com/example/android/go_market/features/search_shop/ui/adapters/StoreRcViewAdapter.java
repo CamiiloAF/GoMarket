@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -68,7 +67,7 @@ public class StoreRcViewAdapter extends RecyclerView.Adapter<StoreRcViewAdapter.
     static class ViewHolder extends RecyclerView.ViewHolder {
         final View item;
         final TextView txtStoreName;
-        final RelativeLayout parentItemShop;
+        final ViewGroup parentItemShop;
 
         public ViewHolder(@NonNull View item) {
             super(item);
@@ -81,7 +80,7 @@ public class StoreRcViewAdapter extends RecyclerView.Adapter<StoreRcViewAdapter.
             return txtStoreName;
         }
 
-        public RelativeLayout getParentItemShop() {
+        public ViewGroup getParentItemShop() {
             return parentItemShop;
         }
     }
