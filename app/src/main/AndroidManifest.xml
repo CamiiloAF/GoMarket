@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.persistence">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.android.observability.features.search_shop.ui.SearchActivity"></activity>
+        <activity android:name="com.example.android.observability.features.detail_shop.ui.DetailShopActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCvDxx4S3E7ESxwHE-vZBkKkNL1rHqeyq0" />
+
+        <activity android:name="com.example.android.observability.features.home.ui.HomeActivity"></activity>
+        <activity android:name="com.example.android.observability.features.auth.sign_up.ui.SignUpActivity" />
+        <activity android:name="com.example.android.observability.features.auth.login.ui.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+    </application>
+
+</manifest>

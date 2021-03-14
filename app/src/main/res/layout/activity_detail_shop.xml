@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        tools:context="com.example.android.observability.features.detail_shop.ui.DetailShopActivity">
+
+        <TextView
+            style="@style/headerTextPrimary"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:text="@string/add_shop" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextShopName"
+                style="@style/modifiedEditText"
+                android:hint="@string/store_name_hint"
+                android:inputType="text"
+                android:maxLines="1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextShopNit"
+                style="@style/modifiedEditText"
+                android:hint="@string/store_nit_hint"
+                android:inputType="text"
+                android:maxLines="1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextShopDescription"
+                style="@style/modifiedEditText"
+                android:hint="@string/store_description_hint"
+                android:inputType="text"
+                android:maxLines="1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextShopHoursOperation"
+                style="@style/modifiedEditText"
+                android:hint="@string/store_hours_operation_hint"
+                android:inputType="text"
+                android:maxLines="1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/buttonSaveShop"
+            style="@style/loginButton"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="@string/store_save_button" />
+
+        <Button
+            android:id="@+id/buttonDeleteShop"
+            style="@style/deleteButton"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="@string/store_save_button" />
+
+    </LinearLayout>
+</ScrollView>

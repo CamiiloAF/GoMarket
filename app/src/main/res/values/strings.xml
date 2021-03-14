@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Login Sample</string>
+    <string name="register">REGISTER</string>
+    <string name="login_user_name_hint">User Name</string>
+    <string name="login_password_hint">Password</string>
+    <string name="signup_login_hint">Already have an account? Sign In</string>
+    <string name="login_signup_hint">Don\'t have an account? Sign Up</string>
+    <string name="btn_login">Login</string>
+    <string name="add_shop">SHOP</string>
+
+    <string name="store_name_hint">Name</string>
+    <string name="store_nit_hint">Nit</string>
+    <string name="store_description_hint">Description</string>
+    <string name="store_hours_operation_hint">Hours of operation</string>
+
+    <string name="store_save_button">Save</string>
+    <string name="store_delete_button">Delete</string>
+    <string name="search_shops_hint">Search shops</string>
+
+</resources>
