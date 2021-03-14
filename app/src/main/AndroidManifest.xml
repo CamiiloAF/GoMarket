@@ -12,16 +12,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.android.observability.features.search_shop.ui.SearchActivity"></activity>
-        <activity android:name="com.example.android.observability.features.detail_shop.ui.DetailShopActivity" />
+        <activity android:name="com.example.android.go_market.features.search_shop.ui.SearchActivity"></activity>
+        <activity android:name="com.example.android.go_market.features.detail_shop.ui.DetailShopActivity" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCvDxx4S3E7ESxwHE-vZBkKkNL1rHqeyq0" />
 
-        <activity android:name="com.example.android.observability.features.home.ui.HomeActivity"></activity>
-        <activity android:name="com.example.android.observability.features.auth.sign_up.ui.SignUpActivity" />
-        <activity android:name="com.example.android.observability.features.auth.login.ui.LoginActivity">
+        <activity android:name="com.example.android.go_market.features.home.ui.HomeActivity"></activity>
+        <activity android:name="com.example.android.go_market.features.auth.sign_up.ui.SignUpActivity" />
+        <activity android:name="com.example.android.go_market.features.auth.login.ui.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GoMarket.iml" filepath="$PROJECT_DIR$/.idea/modules/GoMarket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/GoMarket.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/GoMarket.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Room&amp;RxJava.iml" filepath="$PROJECT_DIR$/.idea/modules/Room&amp;RxJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Room&amp;RxJava.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Room&amp;RxJava.app.iml" />
     </modules>

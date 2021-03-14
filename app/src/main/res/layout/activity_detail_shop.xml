@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:orientation="vertical"
-        tools:context="com.example.android.observability.features.detail_shop.ui.DetailShopActivity">
+        tools:context="com.example.android.go_market.features.detail_shop.ui.DetailShopActivity">
 
         <TextView
             style="@style/headerTextPrimary"

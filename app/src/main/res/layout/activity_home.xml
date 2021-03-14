@@ -10,7 +10,7 @@
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.example.android.observability.features.home.ui.HomeActivity" />
+        tools:context="com.example.android.go_market.features.home.ui.HomeActivity" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/FABSearch"

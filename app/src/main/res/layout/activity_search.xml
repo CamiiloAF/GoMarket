@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.android.observability.features.search_shop.ui.SearchActivity">
+    tools:context="com.example.android.go_market.features.search_shop.ui.SearchActivity">
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/searchView"
