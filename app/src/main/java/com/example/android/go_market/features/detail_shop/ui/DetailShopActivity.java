@@ -16,6 +16,7 @@ import com.example.android.go_market.features.auth.login.ui.ViewModelFactory;
 import com.example.android.go_market.features.detail_shop.domain.entities.ShopModel;
 import com.example.android.persistence.R;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.material.snackbar.Snackbar;
 
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.CompositeDisposable;
@@ -118,6 +119,13 @@ public class DetailShopActivity extends AppCompatActivity {
     private void saveShop() {
         mShopModel = buildShopModel();
 
+        if (mShopModel.getDescription().isEmpty() || mShopModel.getName().isEmpty() || mShopModel.getNit().isEmpty() || mShopModel.getHoursOfOperation().isEmpty()) {
+            Snackbar.make(findViewById(android.R.id.content),
+                    "All inputs are required",
+                    Snackbar.LENGTH_SHORT).show();
+
+            return;
+        }
         mDisposable.add(mViewModel.insertOrUpdateShop(mShopModel)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
